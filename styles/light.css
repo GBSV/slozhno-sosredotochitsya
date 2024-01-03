@@ -13,9 +13,8 @@
   --text-subheader-color-nobg: #353430;
   --bg-color: #FFF1F7;
   --text-header-color: #FFC2E6;
-  --text-header-shadow-color: #ff0070;
+  --text-header-shadow-color: #FF8DCB;
   --edge-decor-color: #353430;
-  /* Переменные светлой темы */    
 }
 
 .page.theme_light {
@@ -27,7 +26,7 @@
   --text-subheader-color-nobg: #353430;
   --bg-color: #FFF1F7;
   --text-header-color: #FFC2E6;
-  --text-header-shadow-color: #ff0070;
+  --text-header-shadow-color: #FF8DCB;
   --edge-decor-color: #353430;
   color: var(--text-main-color);
   background-color: var(--bg-color);
@@ -52,17 +51,17 @@
 
   :root {
 
-  --accent-color: #FF8DCB;
-  --button-color: #353430;
-  --button-hover-color: rgba(50, 49, 45, 0.40);
-  --text-main-color: #353430;
-  --text-subheader-color: #353430;
-  --text-subheader-color-nobg: #353430;
-  --bg-color: #FFF1F7;
-  --text-header-color: #FFC2E6;
-  --text-header-shadow-color: #ff0070;
-  --edge-decor-color: #353430;
-      /* Дублируем переменные светлой темы */   
+    --accent-color: #FF8DCB;
+    --button-color: #353430;
+    --button-hover-color: rgba(50, 49, 45, 0.40);
+    --text-main-color: #353430;
+    --text-subheader-color: #353430;
+    --text-subheader-color-nobg: #353430;
+    --bg-color: #FFF1F7;
+    --text-header-color: #FFC2E6;
+    --text-header-shadow-color: #FF8DCB;
+    --edge-decor-color: #353430;
+
   }
 
   .page {

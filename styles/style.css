@@ -29,7 +29,7 @@
   height: 100vh;
   min-height: 668px;
   padding: 20px;
-  margin-block-end: 60px;
+  margin-block-end: 58px;
   position: relative;
 }
 
@@ -202,6 +202,7 @@
 
 .title__headline {
   display: flex;
+  flex-direction: column;
   width: 50%;
   height: fit-content;
 }
@@ -215,6 +216,10 @@
 }
 
 .title-decor_mrgn_20 {
+  margin-block-end: 20px;
+}
+
+.title-decor_mrgn_20-10 {
   margin-block-end: 20px;
 }
 
@@ -436,6 +441,10 @@
     width: 100%;
   }
 
+  .main__section_two_columns {
+    grid-template-columns: 1fr calc(2fr - 3%);
+  }
+
   .main__section_three_columns {
     display: grid;
     width: 100%;
@@ -448,10 +457,9 @@
   .main__section_three_columns_top_left {
     width: 100%;
     grid-column-start: 1;
-    grid-column-end: span 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    outline: 1px solid olivedrab;
   }
   
   .main__section_three_columns_left {
@@ -460,7 +468,6 @@
     grid-column-end: span 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    outline: 1px solid orange;
   }
   
   .main__section_three_columns_middle {
@@ -469,7 +476,6 @@
     grid-column-end: span 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    outline: 1px solid orange;
   }
   
   .main__section_three_columns_right {
@@ -478,8 +484,8 @@
     grid-column-end: span 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    outline: 1px solid orange;
   }
+
 }
 
 @media (max-width: 375px) {
@@ -517,7 +523,7 @@
 
   .header__text_xl {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    line-height: 0.9;
+    line-height: 0.75;
     margin-inline-start: -1px;
   }
 
@@ -529,6 +535,14 @@
     padding: 10px;  
   }
   
+  .title-decor_mrgn_20-10 {
+    margin-block-end: 10px;
+  }
+
+  .main__text_external_link {
+    text-shadow: 1px 1px 0px var(--text-header-shadow-color);
+  }
+
   .content__images_grid {
     display: grid;
     grid-template-rows: repeat(5, auto);
@@ -580,14 +594,20 @@
     margin-block-end: 50px;
   }
   
+  .main__section_three_columns_top_left {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
   .main__section_two_columns_left {
     width: 100%;
     grid-column-start: 1;
     grid-column-end: span 3;
     grid-row-start: 1;
     grid-row-end: 2;
-  
-    outline: 1px solid orange;
   }
   
   .main__section_two_columns_right {
@@ -596,8 +616,6 @@
     grid-column-end: span 3;
     grid-row-start: 2;
     grid-row-end: 3;
-  
-    outline: 1px solid orange;
   }
 
   .main__section_three_columns {
@@ -608,4 +626,5 @@
     height: 668px;
     padding: 10px;
   }
+
 }
