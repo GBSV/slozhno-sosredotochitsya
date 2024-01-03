@@ -4,9 +4,45 @@
   переключая тему
 */
 
+:root.theme_dark {
+  --accent-color: #ff0070;
+  --button-color: #ff0070;
+  --button-hover-color: rgba(255, 0, 112, 0.40);
+  --text-header-color: #DB00FF;
+  --text-subheader-color: #000028;
+  --text-subheader-color-nobg: #ff0070;
+  --bg-color: #000028;
+  --text-main-color: #F1B2CE;
+  --edge-decor-color: #ff0070;
+  --text-header-shadow-color: #ff0070;
+}
+
 .page.theme_dark {
+  --accent-color: #ff0070;
+  --button-color: #ff0070;
+  --button-hover-color: rgba(255, 0, 112, 0.40);
+  --text-header-color: #DB00FF;
+  --text-subheader-color: #000028;
+  --text-subheader-color-nobg: #ff0070;
+  --bg-color: #000028;
+  --text-main-color: #F1B2CE;
+  --edge-decor-color: #ff0070;
+  --text-header-shadow-color: #ff0070;
+  --text-shadow-color-secondary: #ff8dcb;
+  background-color: var(--bg-color);
+  color: var(--text-main-color);
+  background-image: url(../images/cover-image-dark.png);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+.header__text_xl.theme_dark {
+  color: var(--text-header-color);
+  text-shadow: 4px 4px 0px var(--text-header-shadow-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
