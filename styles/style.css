@@ -446,7 +446,7 @@
   }
 
   .main__section_two_columns {
-    grid-template-columns: 1fr calc(2fr - 5%);
+    grid-template-columns: 40% 60%;
   }
 
   .main__section_three_columns {
@@ -536,7 +536,7 @@
   }
 
   .content {
-    padding: 10px 10px 0;  
+    padding: 10px 10px 5px;
   }
   
   .title-decor_mrgn_20-10 {
