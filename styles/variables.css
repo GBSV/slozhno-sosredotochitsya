@@ -10,7 +10,7 @@
   --text-header-color: #DB00FF;
   --text-subheader-color: #000028;
   --text-subheader-color-nobg: #ff0070;
-  --main-font: IBM Plex Mono;
+  --main-font: 'IBM Plex mono', monospace, sans-serif;
   --bg-color: #000028;
   --text-main-color: #F1B2CE;
   --text-header-shadow-color: #ff0070;
